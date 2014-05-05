@@ -25,7 +25,7 @@ var requireAdapter = function(plugin, filePath, files, use) {
 
     var content  = 'requirejs.config({\n' +
                    '  "paths": {\n' +
-                   '    "' + plugin + '": "/absolute' + path.resolve(filePath).replace(/\.js$/,'') + '"\n' +
+                   '    "' + plugin + '": "' + path.resolve(filePath).replace(/\.js$/,'') + '"\n' +
                    '  }\n' +
                    '});\n\n';
 
